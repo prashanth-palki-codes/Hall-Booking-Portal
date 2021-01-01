@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+    <h1><span>Hall Booking</span></h1>
+    <marquee scrollAmount="20"><button class="btn btn-danger" id="scrollingText">Filling fast...... Hurry up......Book NOW!!!</button></marquee>
+    
+    <div class="container mt-3">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#roomDetailsTab">Room Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#bookRoom">Book a room</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#createRoom">Create Room</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bookedList">Booked Rooms</a>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content" id="tabContent">
+
+            <div id="roomDetailsTab" class="container tab-pane active"><br>
+                <div class="table-responsive">
+                    <table class="table" id="roomDetailsTable">
+                        <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">Room Name</th>
+                              <th scope="col">Amenities</th>
+                              <th scope="col">Price Per Day</th>
+                              <th scope="col">Number of Seats Available</th>
+                            </tr>
+                          </thead>
+                          <tbody id="roomDetailsBody"></tbody>
+                    </table>
+                  </div>
+            </div>
+
+
+            <div id="bookRoom" class="container tab-pane fade"><br>
+                <form>
+                    <div class="form-group">
+
+                        <h4><span class="badge badge-pill badge-warning">Customer Name</span></h4>
+                        <input type="text" class="form-control" id="customerName" autocomplete="off"><br><br>
+                        
+                         <h4><span class="badge badge-pill badge-warning">Room Name</span></h4>
+                         <select class="form-control" id="bookRoomName"></select><br><br>
+                        
+                        <h4><span class="badge badge-pill badge-warning">Check In Date</span></h4>
+                        <input type="date" class="form-control" id="bookingFromDate"><br><br>
+                        
+                        <h4><span class="badge badge-pill badge-warning">Check Out Date</span></h4>
+                        <input type="date" class="form-control" id="bookingToDate">
+
+                        <button id="getPriceBtn" class="btn btn-success" onclick="getRoomPrice();return false;">Get Room Price</button>
+                        
+                        <h4><span class="badge badge-pill badge-warning">Price Per Day</span></h4>
+                        <input type="text" class="form-control" id="pricePerDay"><br><br>
+
+                        <h4><span class="badge badge-pill badge-warning">Total Cost For The Stay</span></h4>
+                        <input type="text" class="form-control" id="totalCost"><br><br>
+   
+                        <button class="btn btn-success" id="submitBooking" onclick="bookRoom()" disabled>Book Now</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="createRoom" class="container tab-pane fade"><br>
+                <form>
+                    <div class="form-group">
+                        <h4><span class="badge badge-pill badge-warning">Room Name</span></h4>
+                        <input type="text" class="form-control" id="createRoomName" autocomplete="off"><br><br>
+
+                        <h4><span class="badge badge-pill badge-warning">Seats Available</span></h4>
+                        <input type="number" class="form-control" id="seatsAvailable"><br><br>
+                        
+                        <h4><span class="badge badge-pill badge-warning">Amenities</span></h4>
+                        <input type="text" class="form-control" id="amenities"><br><br>
+                        
+                        <h4><span class="badge badge-pill badge-warning">Price for 1 Day (in Rupees.)</span></h4>
+                        <input type="number" class="form-control" id="price"><br><br>
+
+                        <button class="btn btn-success" id="submitCreate" onclick="createRoom()">Create Room</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="bookedList" class="container tab-pane fade"><br>
+                <div class="table-responsive">
+                    <table class="table" id="roomBookingsTable">
+                        <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">Customer Name</th>
+                              <th scope="col">Room Name</th>
+                              <th scope="col">Check In Date</th>
+                              <th scope="col">Check Out Date</th>
+                              <th scope="col">Cost For The Stay</th>
+                            </tr>
+                          </thead>
+                          <tbody id="roomBookingsBody"></tbody>
+                    </table>
+                  </div>
+            </div>
+
+        </div>
+      </div>
+
+      <script>
+            var url="https://prashanth-hall-booking-app.herokuapp.com/" 
+            
+            alert("Booking option will be disabled if the selected dates are already booked or unavailable")
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            var yyyy = today.getFullYear();
+            if(dd<10){
+                    dd='0'+dd
+                } 
+                if(mm<10){
+                    mm='0'+mm
+                } 
+
+            today = yyyy+'-'+mm+'-'+dd;
+            document.getElementById("bookingFromDate").setAttribute("min", today);
+            document.getElementById("bookingToDate").setAttribute("min", today);
+
+
+
+            function bookRoom(){
+                var custName=document.getElementById('customerName').value
+                var fromDate=document.getElementById('bookingFromDate').value
+                var toDate=document.getElementById('bookingToDate').value
+                var roomName=document.getElementById('bookRoomName').value
+                var totalCost=document.getElementById('totalCost').value
+                
+                
+                    fetch(url+"bookroom",{
+                        method:"POST",
+                        headers:{
+                            'Content-type':'application/json'
+                        },
+                        body:JSON.stringify({custName,roomName,fromDate,toDate,totalCost})
+                    })
+                    alert("Room Booked")
+                    bookedRooms();
+               
+            }
+
+
+            function bookedRooms(){
+                document.getElementById('roomBookingsBody').innerHTML=""
+                fetch(url+"customerDetails")
+                .then(resp=>{return resp.json()})
+                .then(result=>{
+                    result.data.forEach(element => {
+                        createBookingsRow(element.custName,element.roomName,element.fromDate,element.toDate,element.totalCost);
+                    });
+                })
+            }
+
+            function roomDetails(){
+                document.getElementById('roomDetailsBody').innerHTML=""
+                fetch(url+"roomDetails")
+                .then(resp=>{return resp.json()})
+                .then(result=>{
+                    result.data.forEach(element => {
+                        createRoomDetailsRow(element.roomName,element.amenities,element.pricePerDay,element.seatsAvailable);
+                    });
+                })
+            }
+
+            function roomOptions(){
+                document.getElementById('bookRoomName').innerHTML=""
+
+                var opt=document.createElement('option')
+                opt.innerHTML="<------Select a Room------>"
+                document.getElementById('bookRoomName').append(opt)
+
+                fetch(url+"roomDetails")
+                .then(resp=>{return resp.json()})
+                .then(result=>{
+                    result.data.forEach(element => {
+                        createRoomOptions(element.roomName);
+                    });
+                })
+            }
+
+            function createRoomOptions(optionVal){
+                var opt=document.createElement('option')
+                opt.innerHTML=optionVal
+                document.getElementById('bookRoomName').append(opt)
+            }
+
+            function getRoomPrice(){
+                var selectedRoom=""
+                let fare=0
+                var amount=0
+                var Price=document.getElementById('pricePerDay')
+                var totalPrice=document.getElementById('totalCost')
+                var custName=document.getElementById('customerName').value
+                var fromDate=document.getElementById('bookingFromDate').value
+                var toDate=document.getElementById('bookingToDate').value
+
+                if(toDate<fromDate)
+                    alert("Invalid dates...!!!")
+
+                if(custName!=="" && fromDate!=="" && toDate!==""){
+
+                    var noOfDays =  Math.floor(( Date.parse(toDate) - Date.parse(fromDate) ) / 86400000); 
+
+                    for(var opt of document.getElementById('bookRoomName').options){
+                        if(opt.selected)
+                        selectedRoom=opt.value;
+                    }
+
+                    fetch(url+"getRoomPrice/"+selectedRoom)
+                    .then(resp=>{return resp.json()})
+                        .then(result=>{
+                            result.data.forEach(element => {
+                                Price.value=element.pricePerDay;
+                                totalPrice.value=(noOfDays+1)*element.pricePerDay
+                        });
+                    })
+
+                    fetch(url+"customerDetails")
+                        .then(resp=>{return resp.json()})
+                        .then(result=>{
+                            if(result.data.length===0)
+                            document.getElementById('submitBooking').disabled=false
+
+                            result.data.forEach(element => {
+                                if(element.roomName===selectedRoom){
+                                    var bookedD1=element.fromDate
+                                    var bookedD2=element.toDate
+                                    
+                                    if((fromDate<bookedD1 || fromDate>bookedD2) && (toDate<bookedD1 || toDate>bookedD2) && (bookedD1<fromDate || bookedD1>toDate) && (bookedD2<fromDate || bookedD2>toDate)){
+                                        document.getElementById('submitBooking').disabled=false
+                                        console.log("Booked Now..!!!")
+                                    }
+                                    else{
+                                        document.getElementById('submitBooking').disabled=true
+                                        alert("Already booked, Kindly try booking on other date. Thank you")
+                                    }
+                                }
+                                else{
+                                    document.getElementById('submitBooking').disabled=false
+                                }
+                        });
+                    })
+                }
+                else
+                    alert("Please fill all the fields")
+            }
+
+            roomDetails()
+            bookedRooms()
+            roomOptions()
+
+            function createRoomDetailsRow(RoomName,Amenities,PricePerDay,Seats){
+                var tr=document.createElement('tr')
+                var td1=document.createElement('td')
+                td1.innerHTML=RoomName
+                var td2=document.createElement('td')
+                td2.innerHTML=Amenities
+                var td3=document.createElement('td')
+                td3.innerHTML=PricePerDay
+                var td4=document.createElement('td')
+                td4.innerHTML=Seats
+                tr.append(td1,td2,td3,td4)
+                document.getElementById('roomDetailsBody').append(tr)
+            }
+
+            function createBookingsRow(addroomName,custName,custFromDate,custToTime,custTotalCost){
+                var tr=document.createElement('tr')
+                var td1=document.createElement('td')
+                td1.innerHTML=custName
+                var td2=document.createElement('td')
+                td2.innerHTML=addroomName
+                var td3=document.createElement('td')
+                td3.innerHTML=custFromDate
+                var td4=document.createElement('td')
+                td4.innerHTML=custToTime
+                var td5=document.createElement('td')
+                td5.innerHTML=custTotalCost
+                tr.append(td1,td2,td3,td4,td5)
+                document.getElementById('roomBookingsBody').append(tr);
+            }
+
+            function createRoom(){
+                var roomName=document.getElementById('createRoomName').value;
+                var seatsAvailable=parseInt(document.getElementById('seatsAvailable').value);
+                var amenities=document.getElementById('amenities').value;
+                var pricePerDay=Number(document.getElementById('price').value);
+                var bookingStatus="NO";
+
+                if(roomName!=="" && seatsAvailable!=="" && amenities!=="" && pricePerDay!==""){
+                    fetch(url+"createNewRoom",{
+                        method:"POST",
+                        headers:{
+                            'Content-type':'application/json'
+                        },
+                        body:JSON.stringify({roomName,amenities,pricePerDay,seatsAvailable,bookingStatus})
+                    })
+                    alert("Room created")
+                }
+                else{
+                    alert("Please fill all the fields")
+                }
+            }
+
+            
+            
+      </script>
+</body>
+</html>

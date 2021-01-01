@@ -1,0 +1,95 @@
+body{
+    background-image: url('https://images.wallpaperscraft.com/image/concert_crowd_people_134866_3840x2160.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    background-image: linear-gradient(#BF2468,#FF308F);
+}
+#scrollingText{
+    color:white;
+    font-size: larger;
+    font-weight: bolder;
+    width: auto;
+}
+.container{
+    margin-bottom: 10%;
+    padding: 30px;
+    margin-top: 3%;
+}
+button{
+    margin: 30px !important;
+}
+label{
+    font-weight: bold;
+    margin-top: 15px;
+    color:#01FF70;
+    font-size: larger;
+    border: 1px solid rgb(202, 25, 25);
+    padding: 5px;
+}
+#submitCreate,#submitBooking{
+    margin-left: 30% !important;
+    width: 400px;
+}
+table{
+    background-color: rgb(172, 195, 238);
+}
+td{
+    font-weight: bold;
+}
+input[type="text"],input[type="number"],input[type="date"]{
+    border : 3px solid #85144b !important;
+}
+#submitBooking{
+    border: none;
+    background-color:  #ff01b3 !important;
+    color: #080808 !important;
+    font-weight: bolder;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+#submitBooking:hover{
+    color: #080808 !important;
+    background-color:#01fd16 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    transition: all 0.3s ease 0s;
+}
+#submitCreate{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+#submitCreate:hover{
+    background: #01fd16;
+    color: #080808 !important;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+option{
+    font-weight: bold;
+}
+#getPriceBtn{
+    background-color: black;
+    color: white;
+    margin-left: 30% !important;
+    width: 450px;
+}
